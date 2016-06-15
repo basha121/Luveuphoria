@@ -170,11 +170,12 @@ public class SOContainerViewController: UIViewController, UIGestureRecognizerDel
         self.contentCoverView.frame = self.view.bounds
         self.contentCoverView.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.5)
         self.contentCoverView.alpha = 0.0
-        
-        let tapOnContentCoverViewGesture = UITapGestureRecognizer(target: self, action: #selector(SOContainerViewController.contentCoverViewClicked))
+        let tapOnContentCoverViewGesture = UITapGestureRecognizer(target: self, action: "contentCoverViewClicked")
+//        let tapOnContentCoverViewGesture = UITapGestureRecognizer(target: self, action: #selector(SOContainerViewController.contentCoverViewClicked))
         self.contentCoverView.addGestureRecognizer(tapOnContentCoverViewGesture)
+        let panOnContentCoverVewGesture = UITapGestureRecognizer(target: self, action: "contentCoverViewClicked")
         
-        let panOnContentCoverVewGesture = UIPanGestureRecognizer(target: self, action: #selector(SOContainerViewController.contentCoverViewClicked))
+//        let panOnContentCoverVewGesture = UIPanGestureRecognizer(target: self, action: #selector(SOContainerViewController.contentCoverViewClicked))
         self.contentCoverView.addGestureRecognizer(panOnContentCoverVewGesture)
         
         self.view.addSubview(self.contentCoverView)
@@ -204,7 +205,7 @@ extension SOContainerViewController {
     }
     
     private func createPanGestureRecognizer() -> UIPanGestureRecognizer! {
-        return UIPanGestureRecognizer.init(target: self, action: #selector(SOContainerViewController.moveMenu(_:)))
+        return UIPanGestureRecognizer.init(target: self, action:"moveMenu:")
     }
 }
 
