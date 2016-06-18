@@ -2,24 +2,36 @@
 //  ViewController.swift
 //  LuveuphoriaFormula
 //
-//  Created by BhavikShah on 15/06/16.
+//  Created by Parth Adroja on 6/15/16.
 //
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+import SidebarOverlay
 
+
+class ViewController: SOContainerViewController {
+    
+    override var isSideViewControllerPresented: Bool {
+        didSet {
+            let action = isSideViewControllerPresented ? "opened" : "closed"
+            let side = menuSide == .Left ? "left" : "right"
+            NSLog("You've \(action) the \(side) view controller.")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.menuSide = .Left
+        self.topViewController = self.storyboard?.instantiateViewControllerWithIdentifier("topScreen")
+        self.sideViewController = self.storyboard?.instantiateViewControllerWithIdentifier("leftScreen")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
     }
-
-
+    
 }
-

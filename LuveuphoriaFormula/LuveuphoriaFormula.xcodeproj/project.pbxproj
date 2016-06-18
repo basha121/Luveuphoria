@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		469DDCCF7DA7500A502DE944 /* Pods_LuveuphoriaFormula.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95BAF056A4C1DA0F28B2411 /* Pods_LuveuphoriaFormula.framework */; };
 		A35B29C31D10F5F400F1E0E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B29C21D10F5F400F1E0E1 /* AppDelegate.swift */; };
-		A35B29C51D10F5F400F1E0E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35B29C41D10F5F400F1E0E1 /* ViewController.swift */; };
 		A35B29C81D10F5F400F1E0E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35B29C61D10F5F400F1E0E1 /* Main.storyboard */; };
 		A35B29CA1D10F5F400F1E0E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35B29C91D10F5F400F1E0E1 /* Assets.xcassets */; };
 		A35B29CD1D10F5F400F1E0E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35B29CB1D10F5F400F1E0E1 /* LaunchScreen.storyboard */; };
+		D57B69BB1D11A750003C3457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57B69BA1D11A750003C3457 /* ViewController.swift */; };
+		D57B69BD1D11A796003C3457 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57B69BC1D11A796003C3457 /* LeftViewController.swift */; };
+		D57B69BF1D11A7D3003C3457 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57B69BE1D11A7D3003C3457 /* TopViewController.swift */; };
+		D57B69C11D11AD01003C3457 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57B69C01D11AD01003C3457 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +23,15 @@
 		6FA67FC62D5C621058CB2AAE /* Pods-LuveuphoriaFormula.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuveuphoriaFormula.release.xcconfig"; path = "Pods/Target Support Files/Pods-LuveuphoriaFormula/Pods-LuveuphoriaFormula.release.xcconfig"; sourceTree = "<group>"; };
 		A35B29BF1D10F5F400F1E0E1 /* LuveuphoriaFormula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuveuphoriaFormula.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35B29C21D10F5F400F1E0E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A35B29C41D10F5F400F1E0E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A35B29C71D10F5F400F1E0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A35B29C91D10F5F400F1E0E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A35B29CC1D10F5F400F1E0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A35B29CE1D10F5F400F1E0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A95BAF056A4C1DA0F28B2411 /* Pods_LuveuphoriaFormula.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuveuphoriaFormula.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D57B69BA1D11A750003C3457 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D57B69BC1D11A796003C3457 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		D57B69BE1D11A7D3003C3457 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		D57B69C01D11AD01003C3457 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +85,11 @@
 			isa = PBXGroup;
 			children = (
 				A35B29C21D10F5F400F1E0E1 /* AppDelegate.swift */,
-				A35B29C41D10F5F400F1E0E1 /* ViewController.swift */,
+				D57B69C01D11AD01003C3457 /* AboutViewController.swift */,
 				A35B29C61D10F5F400F1E0E1 /* Main.storyboard */,
+				D57B69BE1D11A7D3003C3457 /* TopViewController.swift */,
+				D57B69BC1D11A796003C3457 /* LeftViewController.swift */,
+				D57B69BA1D11A750003C3457 /* ViewController.swift */,
 				A35B29C91D10F5F400F1E0E1 /* Assets.xcassets */,
 				A35B29CB1D10F5F400F1E0E1 /* LaunchScreen.storyboard */,
 				A35B29CE1D10F5F400F1E0E1 /* Info.plist */,
@@ -209,7 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A35B29C51D10F5F400F1E0E1 /* ViewController.swift in Sources */,
+				D57B69BF1D11A7D3003C3457 /* TopViewController.swift in Sources */,
+				D57B69BD1D11A796003C3457 /* LeftViewController.swift in Sources */,
+				D57B69BB1D11A750003C3457 /* ViewController.swift in Sources */,
+				D57B69C11D11AD01003C3457 /* AboutViewController.swift in Sources */,
 				A35B29C31D10F5F400F1E0E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
