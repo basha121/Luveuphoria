@@ -16,6 +16,8 @@
 		D57B69BD1D11A796003C3457 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57B69BC1D11A796003C3457 /* LeftViewController.swift */; };
 		D57B69BF1D11A7D3003C3457 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57B69BE1D11A7D3003C3457 /* TopViewController.swift */; };
 		D57B69C11D11AD01003C3457 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57B69C01D11AD01003C3457 /* AboutViewController.swift */; };
+		D5CEEC4B1D152B1900ECC6A1 /* NonContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CEEC4A1D152B1900ECC6A1 /* NonContactsTableViewController.swift */; };
+		D5CEEC4D1D152B9500ECC6A1 /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CEEC4C1D152B9500ECC6A1 /* ContactsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		D57B69BC1D11A796003C3457 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		D57B69BE1D11A7D3003C3457 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		D57B69C01D11AD01003C3457 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		D5CEEC4A1D152B1900ECC6A1 /* NonContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonContactsTableViewController.swift; sourceTree = "<group>"; };
+		D5CEEC4C1D152B9500ECC6A1 /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 				A35B29C21D10F5F400F1E0E1 /* AppDelegate.swift */,
 				D57B69C01D11AD01003C3457 /* AboutViewController.swift */,
 				A35B29C61D10F5F400F1E0E1 /* Main.storyboard */,
+				D5CEEC4A1D152B1900ECC6A1 /* NonContactsTableViewController.swift */,
+				D5CEEC4C1D152B9500ECC6A1 /* ContactsTableViewCell.swift */,
 				D57B69BE1D11A7D3003C3457 /* TopViewController.swift */,
 				D57B69BC1D11A796003C3457 /* LeftViewController.swift */,
 				D57B69BA1D11A750003C3457 /* ViewController.swift */,
@@ -218,10 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5CEEC4D1D152B9500ECC6A1 /* ContactsTableViewCell.swift in Sources */,
 				D57B69BF1D11A7D3003C3457 /* TopViewController.swift in Sources */,
 				D57B69BD1D11A796003C3457 /* LeftViewController.swift in Sources */,
 				D57B69BB1D11A750003C3457 /* ViewController.swift in Sources */,
 				D57B69C11D11AD01003C3457 /* AboutViewController.swift in Sources */,
+				D5CEEC4B1D152B1900ECC6A1 /* NonContactsTableViewController.swift in Sources */,
 				A35B29C31D10F5F400F1E0E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

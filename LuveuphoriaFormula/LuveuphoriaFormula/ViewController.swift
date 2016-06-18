@@ -31,7 +31,7 @@ class ViewController: SOContainerViewController {
     
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
+        return .Default
     }
     
 }
