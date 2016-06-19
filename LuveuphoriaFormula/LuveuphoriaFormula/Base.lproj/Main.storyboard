@@ -37,15 +37,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KSP-ON-HG5">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KSP-ON-HG5">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="menuItemCell" id="YV4-T4-Khe">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YV4-T4-Khe" id="qUX-PN-gb4">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -59,7 +59,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rEM-Ae-R4H" firstAttribute="top" secondItem="KSP-ON-HG5" secondAttribute="bottom" id="24b-0I-W8o"/>
-                            <constraint firstItem="KSP-ON-HG5" firstAttribute="top" secondItem="Q4N-H0-wLF" secondAttribute="top" id="30h-S3-Wxi"/>
+                            <constraint firstItem="KSP-ON-HG5" firstAttribute="top" secondItem="Q4N-H0-wLF" secondAttribute="top" constant="64" id="30h-S3-Wxi"/>
                             <constraint firstItem="KSP-ON-HG5" firstAttribute="leading" secondItem="Q4N-H0-wLF" secondAttribute="leading" id="6p7-54-xpX"/>
                             <constraint firstAttribute="trailing" secondItem="KSP-ON-HG5" secondAttribute="trailing" id="it8-DS-QkN"/>
                         </constraints>
@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ut4-jy-gaN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="404" y="615"/>
+            <point key="canvasLocation" x="428" y="615"/>
         </scene>
         <!--Home-->
         <scene sceneID="mim-Eh-RNg">
@@ -214,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2iZ-gY-eGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1304" y="615"/>
+            <point key="canvasLocation" x="1212" y="615"/>
         </scene>
         <!--Non sexual Touches-->
         <scene sceneID="Kqu-6Z-TfR">
@@ -287,7 +287,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSC-d2-E7C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1748" y="267"/>
+            <point key="canvasLocation" x="1656" y="267"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="fvZ-jc-Bo6">
@@ -301,22 +301,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjB-KF-b6Q">
-                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjB-KF-b6Q">
+                                <rect key="frame" x="16" y="26" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Hl4-Ua-KkU"/>
+                                    <constraint firstAttribute="width" constant="46" id="VYa-4i-McR"/>
+                                </constraints>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="showMeMyMenu" destination="6VL-A2-US0" eventType="touchUpInside" id="nbp-LB-uBo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1F-oq-Myr">
+                                <rect key="frame" x="116" y="30" width="88" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="Dgz-QU-Xfx"/>
+                                    <constraint firstAttribute="height" constant="21" id="UQH-ge-MjG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="7Ya-Mq-Gf9">
+                                <rect key="frame" x="0.0" y="70" width="320" height="498"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">The Luveuphoria App was designed to help the user monitor the level on non-sexual contact in their marriage. 
+
+We have found that the best way to monitor the Luveuphoria levels daily. In this case the user would input the specific number of non sexual contacts in each category over a one day period. Then you would input a one for the number of days. The app would generate the level as indicated by the Luveuphoria Formula. Using the app daily will help the user plan daily to enhance the love in their marriage
+
+The Luveuphoria App can be use for other intervals too.
+
+www.advancedmarriagetraining.com
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.98104373859367155" green="0.98168143347985926" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="DjB-KF-b6Q" firstAttribute="leading" secondItem="Fu3-EU-Ksa" secondAttribute="leadingMargin" id="PDY-yo-Ctw"/>
+                            <constraint firstItem="7Ya-Mq-Gf9" firstAttribute="top" secondItem="DjB-KF-b6Q" secondAttribute="bottom" constant="14" id="Ydh-ao-CbV"/>
+                            <constraint firstItem="W1F-oq-Myr" firstAttribute="centerX" secondItem="Fu3-EU-Ksa" secondAttribute="centerX" id="bL6-Pa-KlI"/>
+                            <constraint firstItem="W1F-oq-Myr" firstAttribute="top" secondItem="VJi-Gf-e9w" secondAttribute="bottom" constant="10" id="fzQ-pf-GXB"/>
+                            <constraint firstItem="x59-su-b6T" firstAttribute="top" secondItem="7Ya-Mq-Gf9" secondAttribute="bottom" id="g8s-lU-44q"/>
+                            <constraint firstItem="7Ya-Mq-Gf9" firstAttribute="leading" secondItem="Fu3-EU-Ksa" secondAttribute="leading" id="nGS-kT-SXM"/>
+                            <constraint firstAttribute="trailing" secondItem="7Ya-Mq-Gf9" secondAttribute="trailing" id="qsn-EE-5dS"/>
+                            <constraint firstItem="DjB-KF-b6Q" firstAttribute="centerY" secondItem="W1F-oq-Myr" secondAttribute="centerY" id="zQq-Cg-EBN"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ebt-Dz-ItQ"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oyc-0F-ilc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1748" y="963"/>
+            <point key="canvasLocation" x="1212" y="1317"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pbN-rq-ROo">
@@ -335,7 +375,73 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j4x-sz-JvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="854" y="615"/>
+            <point key="canvasLocation" x="806" y="615"/>
+        </scene>
+        <!--Terms View Controller-->
+        <scene sceneID="RWE-ly-fAA">
+            <objects>
+                <viewController storyboardIdentifier="termsVC" id="kGw-O2-YaM" customClass="TermsViewController" customModule="LuveuphoriaFormula" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FcH-lc-Zbd"/>
+                        <viewControllerLayoutGuide type="bottom" id="YQE-6I-3iA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B4B-Qg-iDO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfS-R1-Lzm">
+                                <rect key="frame" x="16" y="26" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="eTf-qo-kNH"/>
+                                    <constraint firstAttribute="height" constant="30" id="gP2-P6-4Q5"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="showMeMyMenu" destination="kGw-O2-YaM" eventType="touchUpInside" id="1Gr-da-JBC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46v-CY-mI6">
+                                <rect key="frame" x="71" y="30" width="179" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Gqy-NX-rW6"/>
+                                    <constraint firstAttribute="width" constant="179" id="TAF-3Z-HxH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="w32-Xw-oq3">
+                                <rect key="frame" x="0.0" y="70" width="320" height="498"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">By downloading or using the Luveuphoria app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. I am offering you this app to use for your own personal use as an annual subscription. You should be aware that you cannot send it on to anyone else, and you’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to Dr. Derrick L. Campbell.  Dr. Derrick L. Campbell is committed to ensuring that the app is as useful and efficient as possible. For that reason, I reserve the right to make changes to the app or to charge for its services, at any time and for any reason. I will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.   It’s your responsibility to keep your phone and access to the app secure. I therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the Luveuphoria app won’t work properly or at all.   If you’re using the app outside of an area with Wi-Fi, you should remember that your terms of agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third party charges. In using the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you’re using the app, please be aware that we assume that you have received permission from the bill payer for using the app.  At some point I may wish to update the app. The app is currently available on Android and iOS – the requirements for both systems (and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Dr. Derrick L. Campbell does not promise that he will always update the app so that it is relevant to you and/or works with the iOS/Android version that you have installed on your device. However, you promise to always accept updates to the application when offered to you. I may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless I tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device. 
+
+Unless otherwise required by a mandatory law of the United States of America or any other jurisdiction, the Agreements (and any non-contractual disputes/claims arising out of or in connection with them) are subject to the laws of the state of New Jersey in the United States of America, without regard to choice or conflicts of law principles.
+
+You agree to the jurisdiction of the state of New Jersey courts to resolve any dispute, claim, or controversy that arises in connection with the Agreements (and any non-contractual disputes/claims arising out of or in connection with them).</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98104373860000005" green="0.98168143350000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="w32-Xw-oq3" secondAttribute="trailing" id="Hpx-Mn-LYD"/>
+                            <constraint firstItem="w32-Xw-oq3" firstAttribute="top" secondItem="xfS-R1-Lzm" secondAttribute="bottom" constant="14" id="KYR-R5-zht"/>
+                            <constraint firstItem="w32-Xw-oq3" firstAttribute="leading" secondItem="B4B-Qg-iDO" secondAttribute="leading" id="L6K-p0-28h"/>
+                            <constraint firstItem="xfS-R1-Lzm" firstAttribute="centerY" secondItem="46v-CY-mI6" secondAttribute="centerY" id="TNJ-nn-NG0"/>
+                            <constraint firstItem="46v-CY-mI6" firstAttribute="top" secondItem="FcH-lc-Zbd" secondAttribute="bottom" constant="10" id="Zj4-9y-9AF"/>
+                            <constraint firstItem="46v-CY-mI6" firstAttribute="centerX" secondItem="B4B-Qg-iDO" secondAttribute="centerX" id="p8V-cX-RIS"/>
+                            <constraint firstItem="YQE-6I-3iA" firstAttribute="top" secondItem="w32-Xw-oq3" secondAttribute="bottom" id="v9Q-Je-k92"/>
+                            <constraint firstItem="xfS-R1-Lzm" firstAttribute="leading" secondItem="B4B-Qg-iDO" secondAttribute="leadingMargin" id="yht-IJ-Oa5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZnX-nN-HzS"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PHz-h2-dCD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1656" y="1317"/>
         </scene>
     </scenes>
 </document>
