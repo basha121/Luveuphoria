@@ -145,7 +145,7 @@
                                     <constraint firstAttribute="height" constant="30" id="lou-Mb-LEA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter number of days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWy-xC-j3N">
@@ -155,7 +155,7 @@
                                     <constraint firstAttribute="height" constant="21" id="X5e-hz-aCs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="52A-BP-Yts">
@@ -164,7 +164,7 @@
                                     <constraint firstAttribute="height" constant="40" id="yLX-En-wBv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="e0j-br-DQc">
@@ -245,7 +245,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hugs" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="BlP-OL-VEj">
                                             <rect key="frame" x="8" y="0.0" width="200" height="69"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1R8-qc-Urb">
@@ -255,7 +255,7 @@
                                                 <constraint firstAttribute="width" constant="42" id="8mO-8R-vqO"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -319,15 +319,15 @@
                                     <constraint firstAttribute="height" constant="21" id="UQH-ge-MjG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="7Ya-Mq-Gf9">
                                 <rect key="frame" x="0.0" y="70" width="320" height="498"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">The Luveuphoria App was designed to help the user monitor the level on non-sexual contact in their marriage. 
+                                <mutableString key="text">One significant strategy for keeping the fire burning in a marriage is to increase the frequency of non-sexual intimacy. Adding non-sexual intimacy is a low-pressure way of maintaining a healthy marriage. Regular non-sexual intimacy can make you both more receptive to sensual experiences and it will make it easier to transition into more frequent sexual encounters. The Luveuphoria App is designed to help the user monitor the level of non-sexual contact. 
 
-We have found that the best way to monitor the Luveuphoria levels daily. In this case the user would input the specific number of non sexual contacts in each category over a one day period. Then you would input a one for the number of days. The app would generate the level as indicated by the Luveuphoria Formula. Using the app daily will help the user plan daily to enhance the love in their marriage
+Keeping track of your daily Luveuphoria progress is the best way to use the app. In this case, the user would input the specific number of non-sexual contacts in each category over a one day period. Then you would input a one for the number of days. The app would generate the level as indicated by the Luveuphoria Formula. Using the app daily will help the user plan daily non-sexual encounters that enhance the love in a marriage.
 
 The Luveuphoria App can be use for other intervals too.
 
@@ -407,17 +407,17 @@ www.advancedmarriagetraining.com
                                     <constraint firstAttribute="width" constant="179" id="TAF-3Z-HxH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="w32-Xw-oq3">
                                 <rect key="frame" x="0.0" y="70" width="320" height="498"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">By downloading or using the Luveuphoria app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. I am offering you this app to use for your own personal use as an annual subscription. You should be aware that you cannot send it on to anyone else, and you’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to Dr. Derrick L. Campbell.  Dr. Derrick L. Campbell is committed to ensuring that the app is as useful and efficient as possible. For that reason, I reserve the right to make changes to the app or to charge for its services, at any time and for any reason. I will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.   It’s your responsibility to keep your phone and access to the app secure. I therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the Luveuphoria app won’t work properly or at all.   If you’re using the app outside of an area with Wi-Fi, you should remember that your terms of agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third party charges. In using the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you’re using the app, please be aware that we assume that you have received permission from the bill payer for using the app.  At some point I may wish to update the app. The app is currently available on Android and iOS – the requirements for both systems (and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Dr. Derrick L. Campbell does not promise that he will always update the app so that it is relevant to you and/or works with the iOS/Android version that you have installed on your device. However, you promise to always accept updates to the application when offered to you. I may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless I tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device. 
+                                <string key="text">By downloading or using the Luveuphoria app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. I am offering you this app to use for your own personal use as an annual subscription. You should be aware that you cannot send it on to anyone else, and you’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to Dr. Derrick L. Campbell.  Dr. Derrick L. Campbell is committed to ensuring that the app is as useful and efficient as possible. For that reason, I reserve the right to make changes to the app or to charge for its services, at any time and for any reason. I will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.   It’s your responsibility to keep your phone and access to the app secure. I therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the Luveuphoria app won’t work properly or at all.   If you’re using the app outside of an area with Wi-Fi, you should remember that your terms of agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third party charges. In using the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you’re using the app, please be aware that we assume that you have received permission from the bill payer for using the app.  At some point I may wish to update the app. The app is currently available on Android and iOS – the requirements for both systems (and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Dr. Derrick L. Campbell does not promise that he will always update the app so that it is relevant to you and/or works with the iOS/Android version that you have installed on your device. However, you promise to always accept updates to the application when offered to you. I may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless I tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device. 
 
 Unless otherwise required by a mandatory law of the United States of America or any other jurisdiction, the Agreements (and any non-contractual disputes/claims arising out of or in connection with them) are subject to the laws of the state of New Jersey in the United States of America, without regard to choice or conflicts of law principles.
 
-You agree to the jurisdiction of the state of New Jersey courts to resolve any dispute, claim, or controversy that arises in connection with the Agreements (and any non-contractual disputes/claims arising out of or in connection with them).</mutableString>
+You agree to the jurisdiction of the state of New Jersey courts to resolve any dispute, claim, or controversy that arises in connection with the Agreements (and any non-contractual disputes/claims arising out of or in connection with them).</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
