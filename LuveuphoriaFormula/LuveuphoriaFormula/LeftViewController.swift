@@ -19,7 +19,7 @@ class LeftViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 7
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -36,6 +36,8 @@ class LeftViewController: UIViewController, UITableViewDataSource, UITableViewDe
             cell.textLabel?.text = "Tips for couples"
         } else if indexPath.row == 5 {
             cell.textLabel?.text = "Contact Us"
+        } else if indexPath.row == 6 {
+            cell.textLabel?.text = "Share"
         }
         return cell
     }
@@ -69,8 +71,10 @@ class LeftViewController: UIViewController, UITableViewDataSource, UITableViewDe
             if let url = NSURL(string: "http://www.advancedmarriagetraining.com/Tips%20for%20Couples.html") {
                 UIApplication.sharedApplication().openURL(url)
             }
-        } else {
+        } else if indexPath.row == 5 {
             sendEmail()
+        } else {
+            shareApp()
         }
     }
     
@@ -85,6 +89,12 @@ class LeftViewController: UIViewController, UITableViewDataSource, UITableViewDe
         } else {
             // show failure alert
         }
+    }
+    
+    func shareApp() {
+        let shareText = "Calculate your love with our new app for iOS and Android. #Luvephoria App."
+        let vc = UIActivityViewController(activityItems: [shareText], applicationActivities: [])
+        presentViewController(vc, animated: true, completion: nil)
     }
     
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {

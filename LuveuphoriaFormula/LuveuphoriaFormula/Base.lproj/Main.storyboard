@@ -325,14 +325,14 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="7Ya-Mq-Gf9">
                                 <rect key="frame" x="0.0" y="70" width="320" height="498"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">One significant strategy for keeping the fire burning in a marriage is to increase the frequency of non-sexual intimacy. Adding non-sexual intimacy is a low-pressure way of maintaining a healthy marriage. Regular non-sexual intimacy can make you both more receptive to sensual experiences and it will make it easier to transition into more frequent sexual encounters. The Luveuphoria App is designed to help the user monitor the level of non-sexual contact. 
+                                <string key="text">One significant strategy for keeping the fire burning in a marriage is to increase the frequency of non-sexual intimacy. Adding non-sexual intimacy is a low-pressure way of maintaining a healthy marriage. Regular non-sexual intimacy can make you both more receptive to sensual experiences and it will make it easier to transition into more frequent sexual encounters. The Luveuphoria App is designed to help the user monitor the level of non-sexual contact. 
 
 Keeping track of your daily Luveuphoria progress is the best way to use the app. In this case, the user would input the specific number of non-sexual contacts in each category over a one day period. Then you would input a one for the number of days. The app would generate the level as indicated by the Luveuphoria Formula. Using the app daily will help the user plan daily non-sexual encounters that enhance the love in a marriage.
 
 The Luveuphoria App can be use for other intervals too.
 
 www.advancedmarriagetraining.com
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
