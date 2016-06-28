@@ -52,7 +52,8 @@ class NonContactsTableViewController: UITableViewController,ContactsTableViewCel
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
-        let newBackButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Done, target: self, action: "donePressed:")
+        let newBackButton = UIBarButtonItem(title: "DONE", style: UIBarButtonItemStyle.Done, target: self, action: "donePressed:")
+        newBackButton.tintColor = UIColor.whiteColor()
         self.navigationItem.leftBarButtonItem = newBackButton;
     }
     

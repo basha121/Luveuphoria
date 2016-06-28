@@ -23,6 +23,7 @@ class TopViewController: UIViewController ,UITextFieldDelegate, NonContactsTable
     override func viewDidLoad() {
         IBtxtNonSexCount.text = "0"
         IBtxtNoDays.text = "0"
+        self.title = "Luveuphoria"
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -40,27 +41,28 @@ class TopViewController: UIViewController ,UITextFieldDelegate, NonContactsTable
             if calculation < 0 {
                 calculation = 0
             }
+            IBlblValue.hidden = false
             IBlblValue.text = "Luveuphoria Score: \(String(Int(calculation)))"
             IBslideRange.hidden = false
             IBlblLFRange.hidden = false
             if calculation == 0 {
                 IBslideRange.setValue(Float(calculation), animated: true)
-                IBlblLFRange.text = "Luveuphoria Range = Freezing"
+                IBlblLFRange.text = "Luveuphoria Score = Freezing"
             } else if calculation == 1 || calculation == 2 {
                 IBslideRange.setValue(Float(calculation), animated: true)
-                IBlblLFRange.text = "Luveuphoria Range = Cold"
+                IBlblLFRange.text = "Luveuphoria Score = Cold"
             } else if calculation >= 3 && calculation <= 5 {
                 IBslideRange.setValue(Float(calculation), animated: true)
-                IBlblLFRange.text = "Luveuphoria Range = Warm"
+                IBlblLFRange.text = "Luveuphoria Score = Warm"
             } else if calculation >= 6 && calculation <= 7 {
                 IBslideRange.setValue(Float(calculation), animated: true)
-                IBlblLFRange.text = "Luveuphoria Range = Hot"
+                IBlblLFRange.text = "Luveuphoria Score = Hot"
             } else if calculation >= 8 && calculation <= 10 {
                 IBslideRange.setValue(Float(calculation), animated: true)
-                IBlblLFRange.text = "Luveuphoria Range = Extremely Hot"
+                IBlblLFRange.text = "Luveuphoria Score = Extremely Hot"
             } else if calculation >= 11 {
                 IBslideRange.setValue(Float(calculation), animated: true)
-                IBlblLFRange.text = "Luveuphoria Range = Explosive"
+                IBlblLFRange.text = "Luveuphoria Score = Explosive"
             }
             
         } else {

@@ -73,7 +73,7 @@
             </objects>
             <point key="canvasLocation" x="428" y="615"/>
         </scene>
-        <!--Home-->
+        <!--Top View Controller-->
         <scene sceneID="mim-Eh-RNg">
             <objects>
                 <viewController id="gq1-fZ-3zX" customClass="TopViewController" customModule="LuveuphoriaFormula" customModuleProvider="target" sceneMemberID="viewController">
@@ -97,21 +97,13 @@
                                     <outlet property="delegate" destination="gq1-fZ-3zX" id="36j-Z2-Rly"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PNA-RW-1P8">
-                                <rect key="frame" x="-4" y="276" width="328" height="63"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="63" id="Eal-GI-fA0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="1" green="0.060231345870000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98q-OR-bU7">
                                 <rect key="frame" x="236" y="225" width="64" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="OAo-LZ-OvP"/>
                                     <constraint firstAttribute="height" constant="30" id="h0s-yg-n0r"/>
                                 </constraints>
+                                <color key="tintColor" red="0.070588235289999995" green="0.59215686270000001" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
                                     <action selector="IBbtnCalculate:" destination="gq1-fZ-3zX" eventType="touchUpInside" id="QkS-8p-0mq"/>
@@ -119,12 +111,12 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFr-rd-wWL">
                                 <rect key="frame" x="20" y="112" width="196" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.59215686270000001" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="196" id="KFt-fX-aUX"/>
                                     <constraint firstAttribute="height" constant="30" id="uzt-sO-HI6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <state key="normal" title="Enter non sexual touches">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -154,7 +146,7 @@
                                     <constraint firstAttribute="width" constant="196" id="5Kh-2T-MFH"/>
                                     <constraint firstAttribute="height" constant="21" id="X5e-hz-aCs"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -163,13 +155,23 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="yLX-En-wBv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="e0j-br-DQc">
                                 <rect key="frame" x="18" y="374" width="284" height="31"/>
+                                <color key="tintColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PNA-RW-1P8">
+                                <rect key="frame" x="-4" y="276" width="328" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Eal-GI-fA0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.060231345870000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -196,8 +198,9 @@
                             <constraint firstItem="e0j-br-DQc" firstAttribute="leading" secondItem="thy-Cm-xXd" secondAttribute="leading" constant="20" id="zkY-kz-UaE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="pUF-dv-kXg">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="p3Z-Q5-tCz" userLabel="Menu">
+                    <navigationItem key="navigationItem" id="pUF-dv-kXg">
+                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="p3Z-Q5-tCz" userLabel="Menu">
+                            <color key="tintColor" red="0.98104373860000005" green="0.98168143350000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="showMeMyMenu" destination="gq1-fZ-3zX" id="wYX-8O-1Cu"/>
                             </connections>
@@ -216,7 +219,7 @@
             </objects>
             <point key="canvasLocation" x="1212" y="615"/>
         </scene>
-        <!--Non sexual Touches-->
+        <!--Non sexual list-->
         <scene sceneID="Kqu-6Z-TfR">
             <objects>
                 <tableViewController id="42s-dV-l7J" customClass="NonContactsTableViewController" customModule="LuveuphoriaFormula" customModuleProvider="target" sceneMemberID="viewController">
@@ -282,7 +285,7 @@
                             <outlet property="delegate" destination="42s-dV-l7J" id="uM5-9a-wlo"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Non sexual Touches" id="KOY-42-yya"/>
+                    <navigationItem key="navigationItem" title="Non sexual list" id="KOY-42-yya"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSC-d2-E7C" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -301,13 +304,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjB-KF-b6Q">
-                                <rect key="frame" x="16" y="26" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjB-KF-b6Q">
+                                <rect key="frame" x="6" y="26" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Hl4-Ua-KkU"/>
                                     <constraint firstAttribute="width" constant="46" id="VYa-4i-McR"/>
                                 </constraints>
-                                <state key="normal" title="Back"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="MenuIconWhite"/>
                                 <connections>
                                     <action selector="showMeMyMenu" destination="6VL-A2-US0" eventType="touchUpInside" id="nbp-LB-uBo"/>
                                 </connections>
@@ -319,11 +323,11 @@
                                     <constraint firstAttribute="height" constant="21" id="UQH-ge-MjG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="7Ya-Mq-Gf9">
-                                <rect key="frame" x="0.0" y="70" width="320" height="498"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">One significant strategy for keeping the fire burning in a marriage is to increase the frequency of non-sexual intimacy. Adding non-sexual intimacy is a low-pressure way of maintaining a healthy marriage. Regular non-sexual intimacy can make you both more receptive to sensual experiences and it will make it easier to transition into more frequent sexual encounters. The Luveuphoria App is designed to help the user monitor the level of non-sexual contact. 
 
@@ -338,10 +342,10 @@ www.advancedmarriagetraining.com
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.98104373859367155" green="0.98168143347985926" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="DjB-KF-b6Q" firstAttribute="leading" secondItem="Fu3-EU-Ksa" secondAttribute="leadingMargin" id="PDY-yo-Ctw"/>
-                            <constraint firstItem="7Ya-Mq-Gf9" firstAttribute="top" secondItem="DjB-KF-b6Q" secondAttribute="bottom" constant="14" id="Ydh-ao-CbV"/>
+                            <constraint firstItem="DjB-KF-b6Q" firstAttribute="leading" secondItem="Fu3-EU-Ksa" secondAttribute="leadingMargin" constant="-10" id="PDY-yo-Ctw"/>
+                            <constraint firstItem="7Ya-Mq-Gf9" firstAttribute="top" secondItem="VJi-Gf-e9w" secondAttribute="bottom" constant="44" id="U2n-Rd-Bkh"/>
                             <constraint firstItem="W1F-oq-Myr" firstAttribute="centerX" secondItem="Fu3-EU-Ksa" secondAttribute="centerX" id="bL6-Pa-KlI"/>
                             <constraint firstItem="W1F-oq-Myr" firstAttribute="top" secondItem="VJi-Gf-e9w" secondAttribute="bottom" constant="10" id="fzQ-pf-GXB"/>
                             <constraint firstItem="x59-su-b6T" firstAttribute="top" secondItem="7Ya-Mq-Gf9" secondAttribute="bottom" id="g8s-lU-44q"/>
@@ -356,7 +360,7 @@ www.advancedmarriagetraining.com
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oyc-0F-ilc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1212" y="1317"/>
+            <point key="canvasLocation" x="1212" y="1255"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pbN-rq-ROo">
@@ -367,6 +371,10 @@ www.advancedmarriagetraining.com
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zhb-LA-vT5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.24705882352941178" green="0.31764705882352939" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -389,13 +397,13 @@ www.advancedmarriagetraining.com
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfS-R1-Lzm">
-                                <rect key="frame" x="16" y="26" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfS-R1-Lzm">
+                                <rect key="frame" x="6" y="26" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="eTf-qo-kNH"/>
                                     <constraint firstAttribute="height" constant="30" id="gP2-P6-4Q5"/>
                                 </constraints>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" image="MenuIconWhite"/>
                                 <connections>
                                     <action selector="showMeMyMenu" destination="kGw-O2-YaM" eventType="touchUpInside" id="1Gr-da-JBC"/>
                                 </connections>
@@ -407,11 +415,11 @@ www.advancedmarriagetraining.com
                                     <constraint firstAttribute="width" constant="179" id="TAF-3Z-HxH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="w32-Xw-oq3">
-                                <rect key="frame" x="0.0" y="70" width="320" height="498"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">By downloading or using the Luveuphoria app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. I am offering you this app to use for your own personal use as an annual subscription. You should be aware that you cannot send it on to anyone else, and you’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to Dr. Derrick L. Campbell.  Dr. Derrick L. Campbell is committed to ensuring that the app is as useful and efficient as possible. For that reason, I reserve the right to make changes to the app or to charge for its services, at any time and for any reason. I will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.   It’s your responsibility to keep your phone and access to the app secure. I therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the Luveuphoria app won’t work properly or at all.   If you’re using the app outside of an area with Wi-Fi, you should remember that your terms of agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third party charges. In using the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you’re using the app, please be aware that we assume that you have received permission from the bill payer for using the app.  At some point I may wish to update the app. The app is currently available on Android and iOS – the requirements for both systems (and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Dr. Derrick L. Campbell does not promise that he will always update the app so that it is relevant to you and/or works with the iOS/Android version that you have installed on your device. However, you promise to always accept updates to the application when offered to you. I may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless I tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device. 
 
@@ -423,16 +431,16 @@ You agree to the jurisdiction of the state of New Jersey courts to resolve any d
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.98104373860000005" green="0.98168143350000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="w32-Xw-oq3" secondAttribute="trailing" id="Hpx-Mn-LYD"/>
-                            <constraint firstItem="w32-Xw-oq3" firstAttribute="top" secondItem="xfS-R1-Lzm" secondAttribute="bottom" constant="14" id="KYR-R5-zht"/>
                             <constraint firstItem="w32-Xw-oq3" firstAttribute="leading" secondItem="B4B-Qg-iDO" secondAttribute="leading" id="L6K-p0-28h"/>
                             <constraint firstItem="xfS-R1-Lzm" firstAttribute="centerY" secondItem="46v-CY-mI6" secondAttribute="centerY" id="TNJ-nn-NG0"/>
                             <constraint firstItem="46v-CY-mI6" firstAttribute="top" secondItem="FcH-lc-Zbd" secondAttribute="bottom" constant="10" id="Zj4-9y-9AF"/>
                             <constraint firstItem="46v-CY-mI6" firstAttribute="centerX" secondItem="B4B-Qg-iDO" secondAttribute="centerX" id="p8V-cX-RIS"/>
+                            <constraint firstItem="w32-Xw-oq3" firstAttribute="top" secondItem="FcH-lc-Zbd" secondAttribute="bottom" constant="44" id="u0F-hX-108"/>
                             <constraint firstItem="YQE-6I-3iA" firstAttribute="top" secondItem="w32-Xw-oq3" secondAttribute="bottom" id="v9Q-Je-k92"/>
-                            <constraint firstItem="xfS-R1-Lzm" firstAttribute="leading" secondItem="B4B-Qg-iDO" secondAttribute="leadingMargin" id="yht-IJ-Oa5"/>
+                            <constraint firstItem="xfS-R1-Lzm" firstAttribute="leading" secondItem="B4B-Qg-iDO" secondAttribute="leadingMargin" constant="-10" id="yht-IJ-Oa5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZnX-nN-HzS"/>
@@ -441,7 +449,11 @@ You agree to the jurisdiction of the state of New Jersey courts to resolve any d
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PHz-h2-dCD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1656" y="1317"/>
+            <point key="canvasLocation" x="1670" y="1255"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MenuIcon" width="24" height="24"/>
+        <image name="MenuIconWhite" width="24" height="24"/>
+    </resources>
 </document>

@@ -92,7 +92,7 @@ class LeftViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func shareApp() {
-        let shareText = "Calculate your love with our new app for iOS and Android. #Luvephoria App."
+        let shareText = "Calculate your love with our new app for iOS and Android. #Luvephoria App.  https://itunes.apple.com/us/app/luveuphoria/id1125849457?ls=1&mt=8"
         let vc = UIActivityViewController(activityItems: [shareText], applicationActivities: [])
         presentViewController(vc, animated: true, completion: nil)
     }
